@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Daily Path placeholder thumbnail">
+  <rect width="640" height="480" fill="#4338ca"/>
+  <g fill="#eef2ff" opacity=".18">
+    <rect x="140" y="82" width="360" height="300" rx="22"/>
+  </g>
+  <g stroke="#c7d2fe" stroke-width="10">
+    <path d="M180 140h280M180 200h280M180 260h280M180 320h280M220 108v240M300 108v240M380 108v240M460 108v240"/>
+  </g>
+  <path d="M220 320C220 230 300 260 300 180C300 120 420 126 420 260" fill="none" stroke="#facc15" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="220" cy="320" r="24" fill="#fef9c3"/>
+  <circle cx="420" cy="260" r="24" fill="#fef9c3"/>
+  <text x="320" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#eef2ff">Daily Path</text>
+</svg>

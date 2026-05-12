@@ -1,0 +1,32 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Basket Swooshes game cover">
+  <rect width="800" height="880" rx="36" fill="#091425"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="154" cy="144" r="178" fill="#38BDF8" fill-opacity="0.2"/>
+  <circle cx="648" cy="168" r="172" fill="#FB923C" fill-opacity="0.18"/>
+  <rect x="74" y="462" width="652" height="94" rx="22" fill="#38BDF8" fill-opacity="0.16"/>
+  <rect x="592" y="176" width="18" height="154" rx="9" fill="#E2E8F0"/>
+  <rect x="608" y="176" width="70" height="16" rx="8" fill="#E2E8F0"/>
+  <path d="M606 248H692" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M626 260C642 286 662 300 682 300C700 300 716 288 730 260" stroke="#FDE68A" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="216" cy="444" r="34" fill="#F97316"/>
+  <path d="M250 436C328 332 420 278 526 250C576 236 624 236 672 250" stroke="#F8FAFC" stroke-width="12" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <circle cx="432" cy="286" r="8" fill="#F8FAFC"/>
+  <circle cx="650" cy="248" r="18" fill="#FFF7AE" fill-opacity="0.7"/>
+  <path d="M96 516H708" stroke="#F8FAFC" stroke-opacity="0.2" stroke-width="6" stroke-dasharray="20 18"/>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#08131F" fill-opacity="0.92" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="86" y="734" fill="#BAE6FD" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">BASKETBALL CHALLENGE</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">BASKET SWOOSHES</text>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="42" x2="706" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11345A"/>
+      <stop offset="0.5" stop-color="#182A56"/>
+      <stop offset="1" stop-color="#09131F"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="74" y1="56" x2="716" y2="614" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="0.5" stop-color="#1E40AF"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>

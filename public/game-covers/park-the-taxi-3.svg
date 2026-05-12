@@ -1,0 +1,45 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Park The Taxi 3 game cover">
+  <rect width="800" height="880" rx="36" fill="#091320"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="146" cy="128" r="78" fill="#60A5FA" fill-opacity="0.3"/>
+  <rect x="124" y="128" width="554" height="386" rx="34" fill="#0F172A" fill-opacity="0.18"/>
+  <path d="M188 166H614V476H188" stroke="#F8FAFC" stroke-opacity="0.18" stroke-width="12"/>
+  <path d="M248 166V476M372 166V476M496 166V476" stroke="#F8FAFC" stroke-opacity="0.12" stroke-width="8"/>
+  <path d="M188 248H614M188 332H614M188 416H614" stroke="#F8FAFC" stroke-opacity="0.12" stroke-width="8"/>
+  <path d="M454 230H648V432H454" stroke="#F8FAFC" stroke-width="14" stroke-dasharray="18 16"/>
+  <text x="492" y="282" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">P</text>
+  <g>
+    <rect x="262" y="294" width="216" height="118" rx="30" fill="#FACC15"/>
+    <rect x="294" y="264" width="110" height="42" rx="16" fill="#FDE68A"/>
+    <rect x="424" y="316" width="34" height="40" rx="10" fill="#DBEAFE"/>
+    <rect x="286" y="328" width="126" height="30" rx="15" fill="#EAB308"/>
+    <rect x="314" y="336" width="42" height="12" rx="6" fill="#111827"/>
+    <circle cx="314" cy="424" r="28" fill="#0F172A"/>
+    <circle cx="430" cy="424" r="28" fill="#0F172A"/>
+    <circle cx="314" cy="424" r="12" fill="#E2E8F0"/>
+    <circle cx="430" cy="424" r="12" fill="#E2E8F0"/>
+    <path d="M252 370L214 400" stroke="#FBBF24" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M510 338L532 300L554 338H510Z" fill="#F97316"/>
+    <path d="M584 338L606 300L628 338H584Z" fill="#F97316"/>
+  </g>
+  <rect x="70" y="104" width="84" height="220" rx="12" fill="#334155" fill-opacity="0.42"/>
+  <rect x="646" y="92" width="84" height="244" rx="12" fill="#334155" fill-opacity="0.42"/>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#08131F" fill-opacity="0.92" stroke="#FACC15" stroke-opacity="0.32" stroke-width="2"/>
+  <text x="86" y="734" fill="#FDE68A" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">PRECISION PARKING</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">PARK THE TAXI 3</text>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="42" x2="708" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102A43"/>
+      <stop offset="0.5" stop-color="#12304A"/>
+      <stop offset="1" stop-color="#0A131D"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="74" y1="56" x2="716" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E40AF"/>
+      <stop offset="0.48" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+</svg>

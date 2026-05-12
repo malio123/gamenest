@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Mahjong Solitaire placeholder thumbnail">
+  <rect width="640" height="480" fill="#0f766e"/>
+  <rect x="66" y="72" width="508" height="336" rx="28" fill="#ecfeff" opacity=".12"/>
+  <g fill="#f8fafc" stroke="#0f172a" stroke-width="8">
+    <rect x="154" y="118" width="92" height="118" rx="12"/>
+    <rect x="274" y="118" width="92" height="118" rx="12"/>
+    <rect x="394" y="118" width="92" height="118" rx="12"/>
+    <rect x="214" y="254" width="92" height="118" rx="12"/>
+    <rect x="334" y="254" width="92" height="118" rx="12"/>
+  </g>
+  <text x="320" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#14b8a6">M</text>
+  <text x="320" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#f8fafc">Mahjong Solitaire</text>
+</svg>

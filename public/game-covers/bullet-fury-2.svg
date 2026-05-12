@@ -1,0 +1,46 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bullet Fury 2 game cover">
+  <rect width="800" height="880" rx="36" fill="#08070B"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="650" cy="168" r="176" fill="#F97316" fill-opacity="0.18"/>
+  <circle cx="168" cy="216" r="188" fill="#991B1B" fill-opacity="0.22"/>
+  <path d="M0 396L102 372L232 396L338 342L456 364L618 328L800 388V640H0V396Z" fill="#120B11"/>
+  <path d="M0 470L106 446L228 468L346 420L466 438L610 404L800 470V640H0V470Z" fill="#221019"/>
+  <rect x="118" y="102" width="64" height="438" rx="10" fill="#3A1B24"/>
+  <rect x="242" y="102" width="54" height="438" rx="10" fill="#451E28"/>
+  <rect x="360" y="102" width="80" height="438" rx="10" fill="#31161E"/>
+  <rect x="510" y="102" width="54" height="438" rx="10" fill="#451E28"/>
+  <rect x="618" y="102" width="64" height="438" rx="10" fill="#3A1B24"/>
+  <rect x="84" y="122" width="632" height="28" rx="14" fill="#6B1F2E"/>
+  <path d="M514 338C532 314 560 300 590 300C624 300 650 326 650 360C650 394 624 420 590 420C548 420 504 394 494 366C488 350 496 338 514 338Z" fill="#A61D2D"/>
+  <circle cx="590" cy="360" r="18" fill="#FCA5A5"/>
+  <path d="M116 580L206 532L394 494L476 500L544 518L800 548V640H0V608L116 580Z" fill="#0C0910" fill-opacity="0.88"/>
+  <rect x="292" y="512" width="178" height="28" rx="10" fill="#1F2937"/>
+  <rect x="314" y="484" width="86" height="38" rx="8" fill="#475569"/>
+  <path d="M460 506H566L660 532L646 556H504L460 540V506Z" fill="#1E293B"/>
+  <path d="M554 506L664 484L704 506L598 536L554 506Z" fill="#4B5563"/>
+  <path d="M650 488L726 458L746 492L674 520L650 488Z" fill="#D97706"/>
+  <circle cx="728" cy="488" r="42" fill="#FB923C" fill-opacity="0.24"/>
+  <circle cx="728" cy="488" r="20" fill="#FDBA74" fill-opacity="0.6"/>
+  <path d="M716 460L754 488L716 518" stroke="#FFF7ED" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M384 324L478 354" stroke="#FDBA74" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 292L494 318" stroke="#FCA5A5" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="664" cy="360" r="8" fill="#FDE68A"/>
+  <circle cx="686" cy="344" r="6" fill="#FDE68A"/>
+  <circle cx="704" cy="328" r="4" fill="#FDE68A"/>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#0B0A10" fill-opacity="0.94" stroke="#FB923C" stroke-opacity="0.34" stroke-width="2"/>
+  <text x="86" y="734" fill="#FDBA74" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">ARCADE SHOOTER</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800">BULLET FURY 2</text>
+  <defs>
+    <linearGradient id="bg" x1="94" y1="42" x2="708" y2="834" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#210E16"/>
+      <stop offset="0.54" stop-color="#160B12"/>
+      <stop offset="1" stop-color="#09080C"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="82" y1="56" x2="716" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45161B"/>
+      <stop offset="0.48" stop-color="#241017"/>
+      <stop offset="1" stop-color="#130E18"/>
+    </linearGradient>
+  </defs>
+</svg>

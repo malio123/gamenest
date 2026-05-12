@@ -1,65 +1,113 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { CategoryCard } from "@/components/CategoryCard";
+import { ContinuePlayingSection } from "@/components/ContinuePlayingSection";
+import { Footer } from "@/components/Footer";
+import { GameGridSection } from "@/components/GameGridSection";
+import { Header } from "@/components/Header";
+import { PortalBrowseLayout } from "@/components/PortalBrowseLayout";
+import {
+  getHomeCategoryGames,
+  getVisibleCategoryCount,
+  homePopularGames,
+  newGames,
+} from "@/data/games";
+import { categories } from "@/data/categories";
+import { buildPageMetadata, homeDescription, homeTitle } from "@/lib/seo";
+
+export const metadata: Metadata = buildPageMetadata(homeTitle, homeDescription, "/");
 
 export default function Home() {
+  const popularSectionGames = homePopularGames;
+  const newReleaseGames = newGames;
+  const actionGames = getHomeCategoryGames("action", 3);
+  const puzzleGames = getHomeCategoryGames("puzzle", 5);
+  const racingGames = getHomeCategoryGames("racing", 2);
+  const sportsGames = getHomeCategoryGames("sports", 2);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="min-h-screen text-white">
+      <Header />
+
+      <PortalBrowseLayout>
+        <main className="space-y-5">
+          <section className="space-y-2 rounded-[24px] border border-white/8 bg-white/[0.03] px-4 py-4 shadow-[0_18px_48px_-32px_rgba(2,8,23,0.72)] sm:px-5">
+            <h1 className="text-2xl font-black tracking-tight text-white sm:text-3xl">
+              Play Free Online Games on GameNest
+            </h1>
+          </section>
+
+          <ContinuePlayingSection />
+
+          <GameGridSection
+            title="Popular Games"
+            games={popularSectionGames}
+            href="/popular"
+            linkLabel="View All"
+          />
+
+          <GameGridSection
+            id="new-games"
+            title="New Games"
+            games={newReleaseGames}
+            href="/new"
+            linkLabel="View More"
+          />
+
+          <GameGridSection
+            title="Action Games"
+            games={actionGames}
+            href="/category/action"
+            linkLabel="View All"
+          />
+
+          <GameGridSection
+            title="Puzzle Games"
+            games={puzzleGames}
+            href="/category/puzzle"
+            linkLabel="View All"
+          />
+
+          <GameGridSection
+            title="Racing Games"
+            games={racingGames}
+            href="/category/racing"
+            linkLabel="View All"
+          />
+
+          <GameGridSection
+            title="Sports Games"
+            games={sportsGames}
+            href="/category/sports"
+            linkLabel="View All"
+          />
+
+          <section className="space-y-3">
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="text-lg font-black tracking-tight text-white sm:text-xl">
+                Browse by Category
+              </h2>
+              <Link
+                href="/categories"
+                className="text-sm font-bold text-cyan-300 transition hover:text-cyan-200"
+              >
+                View All
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {categories.map((category) => (
+                <CategoryCard
+                  key={category.slug}
+                  category={category}
+                  count={getVisibleCategoryCount(category.slug)}
+                />
+              ))}
+            </div>
+          </section>
+        </main>
+      </PortalBrowseLayout>
+
+      <Footer />
     </div>
   );
 }

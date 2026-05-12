@@ -1,0 +1,62 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assault Time game cover">
+  <rect width="800" height="880" rx="36" fill="#050B12"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="168" cy="138" r="180" fill="#1E3A8A" fill-opacity="0.28"/>
+  <circle cx="664" cy="180" r="156" fill="#F97316" fill-opacity="0.18"/>
+  <path d="M0 450L120 396L226 416L326 352L462 388L594 340L800 428V640H0V450Z" fill="#0A1624"/>
+  <path d="M0 500L136 452L236 480L332 412L436 450L554 408L800 510V640H0V500Z" fill="#13263B"/>
+  <rect x="82" y="210" width="88" height="196" rx="10" fill="#14212F"/>
+  <rect x="190" y="176" width="102" height="230" rx="12" fill="#172635"/>
+  <rect x="320" y="194" width="76" height="212" rx="10" fill="#1B2A38"/>
+  <rect x="598" y="162" width="124" height="244" rx="12" fill="#14212F"/>
+  <rect x="524" y="222" width="56" height="184" rx="8" fill="#1B2A38"/>
+  <path d="M506 286L484 332L516 332L490 392" stroke="#FB923C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M626 286L604 332L636 332L610 392" stroke="#FB923C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g opacity="0.92">
+    <circle cx="612" cy="312" r="62" stroke="#FCA5A5" stroke-width="6"/>
+    <path d="M612 268V356M568 312H656" stroke="#FCA5A5" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M530 340C548 308 568 290 596 278C628 264 644 288 638 322L632 362C628 388 598 402 570 394C534 384 514 364 530 340Z" fill="#2C3F50"/>
+    <circle cx="590" cy="312" r="16" fill="#FDE68A"/>
+    <path d="M556 404L570 356L632 362L616 418" fill="#243648"/>
+    <path d="M548 418L600 438L638 424L668 476L624 494L594 452L540 438L548 418Z" fill="#1C2A37"/>
+  </g>
+  <g>
+    <path d="M104 566L192 506L378 470L486 482L560 514L800 548V640H0V610L104 566Z" fill="#0A121A" fill-opacity="0.84"/>
+    <path d="M146 522H346L386 544H278L226 576H122L146 522Z" fill="#374151"/>
+    <rect x="326" y="502" width="192" height="28" rx="10" fill="#1F2937"/>
+    <rect x="350" y="474" width="96" height="36" rx="8" fill="#334155"/>
+    <path d="M466 498H582L664 526L652 548H510L466 534V498Z" fill="#111827"/>
+    <path d="M548 496L652 520L694 514L706 536L650 548L542 522L548 496Z" fill="#4B5563"/>
+    <circle cx="560" cy="522" r="12" fill="#0F172A"/>
+    <path d="M620 502L716 474L734 500L646 530L620 502Z" fill="#1E293B"/>
+    <path d="M702 482L744 468L760 510L718 524L702 482Z" fill="#D97706"/>
+    <circle cx="738" cy="492" r="38" fill="#FDBA74" fill-opacity="0.24"/>
+    <path d="M732 470L768 492L730 516" stroke="#FFEDD5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M580 520L618 498" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.86">
+    <circle cx="656" cy="500" r="20" fill="#FB923C"/>
+    <circle cx="686" cy="470" r="10" fill="#FB923C"/>
+    <circle cx="702" cy="516" r="8" fill="#FDBA74"/>
+    <circle cx="278" cy="520" r="6" fill="#FCA5A5"/>
+    <circle cx="236" cy="546" r="4" fill="#FDBA74"/>
+  </g>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#07111B" fill-opacity="0.92" stroke="#FB923C" stroke-opacity="0.36" stroke-width="2"/>
+  <text x="86" y="734" fill="#FDBA74" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">FAST FPS ACTION</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800">ASSAULT TIME</text>
+  <defs>
+    <linearGradient id="bg" x1="88" y1="44" x2="712" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101925"/>
+      <stop offset="0.54" stop-color="#130E15"/>
+      <stop offset="1" stop-color="#08111A"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="118" y1="56" x2="692" y2="614" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B2F4D"/>
+      <stop offset="0.5" stop-color="#121C2A"/>
+      <stop offset="1" stop-color="#30120F"/>
+    </linearGradient>
+  </defs>
+</svg>

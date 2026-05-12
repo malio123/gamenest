@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Spider Solitaire placeholder thumbnail">
+  <rect width="640" height="480" fill="#7f1d1d"/>
+  <path d="M0 314c88-34 169-38 244-12 86 30 169 26 250-14 54-27 103-34 146-20v212H0z" fill="#fecaca" opacity=".16"/>
+  <g fill="#f8fafc" stroke="#111827" stroke-width="7">
+    <rect x="78" y="108" width="74" height="106" rx="10"/>
+    <rect x="164" y="132" width="74" height="106" rx="10"/>
+    <rect x="250" y="156" width="74" height="106" rx="10"/>
+    <rect x="336" y="180" width="74" height="106" rx="10"/>
+    <rect x="422" y="204" width="74" height="106" rx="10"/>
+  </g>
+  <g fill="#111827">
+    <circle cx="320" cy="120" r="22"/>
+    <circle cx="320" cy="172" r="34"/>
+    <path d="M288 154h-72M352 154h72M292 184l-66 44M348 184l66 44M301 207l-48 62M339 207l48 62" stroke="#111827" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="115" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#dc2626">K</text>
+  <text x="201" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#dc2626">Q</text>
+  <text x="287" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#dc2626">J</text>
+  <text x="373" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#dc2626">10</text>
+  <text x="459" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#dc2626">9</text>
+  <text x="320" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc">Spider Solitaire</text>
+</svg>

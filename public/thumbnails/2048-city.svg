@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="2048 City placeholder thumbnail">
+  <rect width="640" height="480" fill="#334155"/>
+  <rect x="146" y="62" width="348" height="348" rx="24" fill="#e2e8f0" opacity=".18"/>
+  <g fill="#f8fafc">
+    <rect x="170" y="88" width="88" height="88" rx="10"/>
+    <rect x="276" y="88" width="88" height="88" rx="10"/>
+    <rect x="382" y="88" width="88" height="88" rx="10"/>
+    <rect x="170" y="194" width="88" height="88" rx="10"/>
+    <rect x="276" y="194" width="88" height="88" rx="10"/>
+    <rect x="382" y="194" width="88" height="88" rx="10"/>
+    <rect x="170" y="300" width="88" height="88" rx="10"/>
+    <rect x="276" y="300" width="88" height="88" rx="10"/>
+    <rect x="382" y="300" width="88" height="88" rx="10"/>
+  </g>
+  <g fill="#0f172a">
+    <path d="M194 148h40v28h-40zM198 116h32v32h-32z"/>
+    <path d="M296 134h48v42h-48zM306 110h28v24h-28z"/>
+    <path d="M398 120h56v56h-56zM410 98h32v22h-32z"/>
+    <path d="M196 248h36v34h-36zM202 226h24v22h-24z"/>
+    <path d="M294 226h52v56h-52zM304 208h32v18h-32z"/>
+    <path d="M404 232h44v50h-44zM414 212h24v20h-24z"/>
+    <path d="M190 332h48v56h-48zM200 308h28v24h-28z"/>
+    <path d="M292 326h56v62h-56zM304 302h32v24h-32z"/>
+    <path d="M400 316h52v72h-52zM410 292h32v24h-32z"/>
+  </g>
+  <text x="320" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#38bdf8">2048</text>
+  <text x="320" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc">2048 City</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Connect 2 Cars game cover">
+  <rect width="800" height="880" rx="36" fill="#081427"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="168" cy="148" r="186" fill="#38BDF8" fill-opacity="0.24"/>
+  <circle cx="632" cy="188" r="170" fill="#A3E635" fill-opacity="0.2"/>
+  <rect x="118" y="120" width="564" height="396" rx="34" fill="#F8FAFC" fill-opacity="0.18" stroke="#E0F2FE" stroke-opacity="0.4" stroke-width="4"/>
+  <path d="M200 120V516M282 120V516M364 120V516M446 120V516M528 120V516M610 120V516" stroke="#E0F2FE" stroke-opacity="0.2" stroke-width="4"/>
+  <path d="M118 198H682M118 276H682M118 354H682M118 432H682" stroke="#E0F2FE" stroke-opacity="0.2" stroke-width="4"/>
+  <g>
+    <rect x="168" y="206" width="206" height="132" rx="28" fill="#FBBF24"/>
+    <rect x="198" y="184" width="110" height="44" rx="18" fill="#FDE68A"/>
+    <rect x="332" y="228" width="30" height="40" rx="10" fill="#DBEAFE"/>
+    <circle cx="220" cy="350" r="28" fill="#0F172A"/>
+    <circle cx="324" cy="350" r="28" fill="#0F172A"/>
+    <circle cx="220" cy="350" r="14" fill="#E2E8F0"/>
+    <circle cx="324" cy="350" r="14" fill="#E2E8F0"/>
+    <rect x="184" y="246" width="148" height="36" rx="18" fill="#F59E0B"/>
+    <rect x="198" y="258" width="60" height="12" rx="6" fill="#F8FAFC"/>
+  </g>
+  <g>
+    <rect x="424" y="318" width="206" height="132" rx="28" fill="#34D399"/>
+    <rect x="456" y="296" width="104" height="42" rx="18" fill="#BBF7D0"/>
+    <rect x="588" y="340" width="28" height="40" rx="10" fill="#DBEAFE"/>
+    <circle cx="476" cy="462" r="28" fill="#0F172A"/>
+    <circle cx="580" cy="462" r="28" fill="#0F172A"/>
+    <circle cx="476" cy="462" r="14" fill="#E2E8F0"/>
+    <circle cx="580" cy="462" r="14" fill="#E2E8F0"/>
+    <rect x="440" y="356" width="144" height="34" rx="17" fill="#10B981"/>
+    <rect x="454" y="366" width="52" height="10" rx="5" fill="#F8FAFC"/>
+  </g>
+  <path d="M374 270H414V232H560V318" stroke="#FDE047" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="374" cy="270" r="12" fill="#FFF7AE"/>
+  <circle cx="560" cy="318" r="12" fill="#FFF7AE"/>
+  <g opacity="0.95">
+    <circle cx="620" cy="166" r="26" fill="#F8FAFC"/>
+    <path d="M636 166L680 166" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round"/>
+    <path d="M620 182L620 226" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#08131F" fill-opacity="0.92" stroke="#A3E635" stroke-opacity="0.32" stroke-width="2"/>
+  <text x="86" y="734" fill="#D9F99D" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">MATCH AND CONNECT</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">CONNECT 2 CARS</text>
+  <defs>
+    <linearGradient id="bg" x1="92" y1="42" x2="706" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132E52"/>
+      <stop offset="0.48" stop-color="#15324A"/>
+      <stop offset="1" stop-color="#0A1320"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="84" y1="52" x2="714" y2="616" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4AA7E8"/>
+      <stop offset="0.48" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#2CB67D"/>
+    </linearGradient>
+  </defs>
+</svg>

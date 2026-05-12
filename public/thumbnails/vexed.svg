@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Vexed placeholder thumbnail">
+  <rect width="640" height="480" fill="#1d4ed8"/>
+  <g transform="translate(128 86)">
+    <rect width="384" height="288" rx="24" fill="#dbeafe" opacity=".16"/>
+    <g stroke="#172554" stroke-width="8">
+      <rect x="44" y="42" width="84" height="84" rx="14" fill="#38bdf8"/>
+      <rect x="150" y="42" width="84" height="84" rx="14" fill="#f97316"/>
+      <rect x="256" y="42" width="84" height="84" rx="14" fill="#38bdf8"/>
+      <rect x="96" y="162" width="84" height="84" rx="14" fill="#a3e635"/>
+      <rect x="204" y="162" width="84" height="84" rx="14" fill="#f97316"/>
+    </g>
+  </g>
+  <text x="320" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#eff6ff">Vexed</text>
+</svg>

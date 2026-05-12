@@ -1,0 +1,56 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Warfare Area 3 game cover">
+  <rect width="800" height="880" rx="36" fill="#050B12"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect width="0" height="0" fill="none"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="642" cy="152" r="162" fill="#FB923C" fill-opacity="0.18"/>
+  <circle cx="166" cy="202" r="184" fill="#1D4ED8" fill-opacity="0.22"/>
+  <path d="M0 430L118 402L252 428L360 378L450 394L588 346L800 418V640H0V430Z" fill="#0A131C"/>
+  <path d="M0 498L100 462L222 478L334 430L454 446L598 410L800 488V640H0V498Z" fill="#12212E"/>
+  <rect x="68" y="168" width="124" height="238" rx="10" fill="#17222F"/>
+  <rect x="212" y="204" width="92" height="202" rx="8" fill="#1C2A37"/>
+  <rect x="320" y="152" width="148" height="254" rx="12" fill="#202A35"/>
+  <rect x="494" y="190" width="110" height="216" rx="10" fill="#1A2532"/>
+  <rect x="624" y="148" width="96" height="258" rx="10" fill="#17222F"/>
+  <path d="M112 266H144V406H112V266Z" fill="#475569"/>
+  <path d="M284 264H328V406H284V264Z" fill="#475569"/>
+  <path d="M538 266H570V406H538V266Z" fill="#475569"/>
+  <path d="M692 258H724V406H692V258Z" fill="#475569"/>
+  <path d="M488 246L454 288L510 288L468 350" stroke="#F97316" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g opacity="0.92">
+    <circle cx="560" cy="300" r="68" stroke="#E2E8F0" stroke-width="6"/>
+    <circle cx="560" cy="300" r="30" stroke="#E2E8F0" stroke-width="5"/>
+    <path d="M560 238V266M560 334V362M498 300H526M594 300H622" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M308 394C322 344 350 306 388 290C432 270 472 286 492 336L510 382C530 438 500 496 444 516C386 538 332 516 304 464C294 446 294 424 308 394Z" fill="#2B3C49"/>
+    <circle cx="404" cy="316" r="28" fill="#334155"/>
+    <rect x="388" y="346" width="62" height="124" rx="24" fill="#3A4C58"/>
+    <path d="M342 394L406 372L426 418L358 446L342 394Z" fill="#1E293B"/>
+    <path d="M438 370L516 394L500 446L434 424L438 370Z" fill="#1E293B"/>
+    <path d="M434 392L522 372L580 390L570 420L494 424L434 392Z" fill="#111827"/>
+    <path d="M570 388L646 370L664 388L588 414L570 388Z" fill="#4B5563"/>
+    <path d="M374 470L356 544L394 554L418 476" fill="#111827"/>
+    <path d="M446 470L470 548L508 538L486 468" fill="#111827"/>
+  </g>
+  <g opacity="0.86">
+    <circle cx="648" cy="402" r="22" fill="#FB923C"/>
+    <circle cx="682" cy="424" r="10" fill="#FCA5A5"/>
+    <circle cx="612" cy="428" r="8" fill="#FDBA74"/>
+  </g>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#07111B" fill-opacity="0.92" stroke="#FB923C" stroke-opacity="0.32" stroke-width="2"/>
+  <text x="86" y="734" fill="#FECACA" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">COMBAT SHOOTER</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">WARFARE AREA 3</text>
+  <defs>
+    <linearGradient id="bg" x1="92" y1="42" x2="706" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121A24"/>
+      <stop offset="0.56" stop-color="#101015"/>
+      <stop offset="1" stop-color="#08111A"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="74" y1="52" x2="714" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3150"/>
+      <stop offset="0.52" stop-color="#20252D"/>
+      <stop offset="1" stop-color="#30150F"/>
+    </linearGradient>
+  </defs>
+</svg>

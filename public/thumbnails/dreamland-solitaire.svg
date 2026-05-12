@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Dreamland Solitaire placeholder thumbnail">
+  <rect width="640" height="480" fill="#831843"/>
+  <path d="M0 340c82-60 142-72 224-40 88 34 154 20 234-42 62-48 116-58 182-28v250H0z" fill="#fbcfe8" opacity=".22"/>
+  <g fill="#fff1f2" stroke="#111827" stroke-width="8">
+    <rect x="170" y="108" width="104" height="150" rx="16" transform="rotate(-10 222 183)"/>
+    <rect x="268" y="90" width="104" height="150" rx="16"/>
+    <rect x="366" y="108" width="104" height="150" rx="16" transform="rotate(10 418 183)"/>
+  </g>
+  <text x="320" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#be123c">K</text>
+  <text x="320" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#fff1f2">Dreamland Solitaire</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="800" height="880" viewBox="0 0 800 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Truck Loader 5 game cover">
+  <rect width="800" height="880" rx="36" fill="#09111B"/>
+  <rect width="800" height="880" rx="36" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="640" rx="36" fill="url(#scene)"/>
+  <circle cx="162" cy="168" r="176" fill="#38BDF8" fill-opacity="0.18"/>
+  <circle cx="632" cy="188" r="170" fill="#FBBF24" fill-opacity="0.18"/>
+  <rect x="84" y="464" width="636" height="38" rx="18" fill="#314659"/>
+  <rect x="124" y="448" width="248" height="20" rx="10" fill="#64748B"/>
+  <g>
+    <rect x="184" y="324" width="162" height="96" rx="26" fill="#FBBF24"/>
+    <rect x="206" y="286" width="72" height="56" rx="18" fill="#FDE68A"/>
+    <circle cx="226" cy="436" r="28" fill="#0F172A"/>
+    <circle cx="326" cy="436" r="28" fill="#0F172A"/>
+    <circle cx="226" cy="436" r="12" fill="#E2E8F0"/>
+    <circle cx="326" cy="436" r="12" fill="#E2E8F0"/>
+    <rect x="240" y="270" width="20" height="64" rx="8" fill="#94A3B8"/>
+    <rect x="340" y="236" width="24" height="198" rx="10" fill="#F59E0B"/>
+    <path d="M352 248H450V272H352" fill="#FCD34D"/>
+    <path d="M438 272V338" stroke="#FCD34D" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="438" cy="356" r="28" fill="#38BDF8" fill-opacity="0.22"/>
+    <circle cx="438" cy="356" r="16" fill="#BAE6FD" fill-opacity="0.8"/>
+  </g>
+  <g>
+    <rect x="490" y="332" width="172" height="86" rx="18" fill="#3B82F6"/>
+    <rect x="612" y="354" width="58" height="64" rx="12" fill="#93C5FD"/>
+    <rect x="514" y="298" width="86" height="32" rx="12" fill="#DBEAFE"/>
+    <circle cx="532" cy="430" r="24" fill="#0F172A"/>
+    <circle cx="630" cy="430" r="24" fill="#0F172A"/>
+    <circle cx="532" cy="430" r="10" fill="#E2E8F0"/>
+    <circle cx="630" cy="430" r="10" fill="#E2E8F0"/>
+    <rect x="470" y="292" width="44" height="56" rx="12" fill="#EAB308"/>
+  </g>
+  <g>
+    <rect x="484" y="214" width="92" height="92" rx="12" fill="#D97706"/>
+    <rect x="502" y="232" width="24" height="24" rx="6" fill="#FDBA74"/>
+    <rect x="536" y="232" width="24" height="24" rx="6" fill="#FDBA74"/>
+    <rect x="502" y="266" width="24" height="24" rx="6" fill="#FDBA74"/>
+    <rect x="536" y="266" width="24" height="24" rx="6" fill="#FDBA74"/>
+  </g>
+  <rect x="98" y="144" width="112" height="208" rx="12" fill="#2A3947" fill-opacity="0.68"/>
+  <rect x="610" y="112" width="110" height="226" rx="12" fill="#2A3947" fill-opacity="0.68"/>
+  <rect x="254" y="118" width="84" height="170" rx="10" fill="#324556" fill-opacity="0.54"/>
+  <rect x="392" y="126" width="70" height="142" rx="10" fill="#324556" fill-opacity="0.54"/>
+  <rect x="56" y="678" width="688" height="148" rx="30" fill="#08131F" fill-opacity="0.93" stroke="#FBBF24" stroke-opacity="0.32" stroke-width="2"/>
+  <text x="86" y="734" fill="#FDE68A" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">PHYSICS PUZZLE</text>
+  <text x="86" y="794" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">TRUCK LOADER 5</text>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="42" x2="708" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#122540"/>
+      <stop offset="0.52" stop-color="#182234"/>
+      <stop offset="1" stop-color="#0A131D"/>
+    </linearGradient>
+    <linearGradient id="scene" x1="82" y1="54" x2="716" y2="616" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#213A58"/>
+      <stop offset="0.48" stop-color="#243446"/>
+      <stop offset="1" stop-color="#12202D"/>
+    </linearGradient>
+  </defs>
+</svg>
