@@ -1,22 +1,25 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { hasPlayableIframe, type IframeStatus } from "@/data/games";
 
 type GamePlayerProps = {
   title: string;
   iframeUrl: string;
+  iframeStatus?: IframeStatus;
   categories?: string[];
 };
 
-function isPlaceholderUrl(url: string) {
-  return !url || url.includes("example.com");
-}
-
-export function GamePlayer({ title, iframeUrl, categories = [] }: GamePlayerProps) {
+export function GamePlayer({
+  title,
+  iframeUrl,
+  iframeStatus,
+  categories = [],
+}: GamePlayerProps) {
   const playerRef = useRef<HTMLDivElement>(null);
   const [loadedUrl, setLoadedUrl] = useState<string | null>(null);
   const [timedOutUrl, setTimedOutUrl] = useState<string | null>(null);
-  const showPlaceholder = isPlaceholderUrl(iframeUrl);
+  const showPlaceholder = !hasPlayableIframe({ iframeUrl, iframeStatus });
   const showLoadFallback = timedOutUrl === iframeUrl && loadedUrl !== iframeUrl;
   const isLoading = !showPlaceholder && loadedUrl !== iframeUrl && !showLoadFallback;
 

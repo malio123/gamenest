@@ -1,6 +1,7 @@
 import { categoryMatchesSlug } from "@/data/categories";
 
 export type GameCollection = "launch";
+export type IframeStatus = "available" | "unavailable" | "unknown";
 
 export type { Category } from "@/data/categories";
 export {
@@ -19,6 +20,7 @@ export type Game = {
   title: string;
   description: string;
   iframeUrl: string;
+  iframeStatus?: IframeStatus;
   thumbnail: string;
   categories: string[];
   tags: string[];
@@ -30,9 +32,36 @@ export type Game = {
   isPopular?: boolean;
   popular?: boolean;
   featured?: boolean;
+  isPublished?: boolean;
   languageSafe?: boolean;
   collection?: GameCollection;
 };
+
+export function isPlaceholderUrl(url: string) {
+  const normalizedUrl = url.trim().toLowerCase();
+
+  return (
+    normalizedUrl.length === 0 ||
+    normalizedUrl.includes("example.com") ||
+    normalizedUrl.includes("placeholder")
+  );
+}
+
+export function hasPlayableIframe(game: Pick<Game, "iframeUrl" | "iframeStatus">) {
+  if (isPlaceholderUrl(game.iframeUrl)) {
+    return false;
+  }
+
+  if (game.iframeStatus === "unavailable" || game.iframeStatus === "unknown") {
+    return false;
+  }
+
+  return true;
+}
+
+export function isGameVisible(game: Game) {
+  return game.isPublished !== false && hasPlayableIframe(game);
+}
 
 export const games: Game[] = [
   {
@@ -42,6 +71,7 @@ export const games: Game[] = [
     description:
       "A fast-paced action shooter where quick aim and sharp reactions are the key to survival.",
     iframeUrl: "https://1000webgames.com/games/assaulttime/html5/",
+    iframeStatus: "available",
     thumbnail: "/game-covers/assault-time.jpg",
     categories: ["Action", "Shooting"],
     tags: ["action", "shooter", "combat", "reflex"],
@@ -72,6 +102,7 @@ export const games: Game[] = [
     description:
       "Jump into intense first-person action and clear hostile zones in this browser shooter.",
     iframeUrl: "https://1000webgames.com/games/warfarearea3/html5/",
+    iframeStatus: "available",
     thumbnail: "/game-covers/warfare-area-3.jpg",
     categories: ["Action", "Shooting"],
     tags: ["fps", "shooter", "combat", "tactical"],
@@ -103,6 +134,7 @@ export const games: Game[] = [
     description:
       "Fight through dangerous corridors, track enemy movement, and stay accurate under pressure.",
     iframeUrl: "https://1000webgames.com/games/bulletfury2/html5/",
+    iframeStatus: "available",
     thumbnail: "/game-covers/bullet-fury-2.jpg",
     categories: ["Action", "Shooting"],
     tags: ["fps", "sci-fi", "shooter", "reaction"],
@@ -133,10 +165,12 @@ export const games: Game[] = [
     description:
       "Link matching vehicles, clear the board efficiently, and enjoy a light puzzle challenge.",
     iframeUrl: "https://1000webgames.com/games/connect2cars/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/connect-2-cars.jpg",
     categories: ["Puzzle", "Casual"],
     tags: ["matching", "cars", "casual", "logic"],
     source: "1000 WebGames",
+    isPublished: false,
     isNew: true,
     languageSafe: true,
     collection: "launch",
@@ -162,10 +196,12 @@ export const games: Game[] = [
     description:
       "Match colorful gems, complete puzzle objectives, and enjoy relaxing brain-teasing gameplay.",
     iframeUrl: "https://1000webgames.com/games/jewellegend/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/jewel-legend.jpg",
     categories: ["Puzzle", "Casual"],
     tags: ["match-3", "gems", "casual", "puzzle"],
     source: "1000 WebGames",
+    isPublished: false,
     isPopular: true,
     popular: true,
     languageSafe: true,
@@ -192,10 +228,12 @@ export const games: Game[] = [
     description:
       "Place soft-colored block shapes carefully and keep your board open for bigger clears.",
     iframeUrl: "https://1000webgames.com/games/gummyblocksevolution/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/gummy-blocks-evolution.jpg",
     categories: ["Puzzle", "Board"],
     tags: ["blocks", "board", "placement", "strategy"],
     source: "1000 WebGames",
+    isPublished: false,
     isNew: true,
     languageSafe: true,
     collection: "launch",
@@ -221,10 +259,12 @@ export const games: Game[] = [
     description:
       "Use clever movement and magnetic loading mechanics to solve cargo puzzles stage by stage.",
     iframeUrl: "https://1000webgames.com/games/truckloader5/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/truck-loader-5.jpg",
     categories: ["Puzzle", "Strategy"],
     tags: ["truck", "cargo", "physics", "strategy"],
     source: "1000 WebGames",
+    isPublished: false,
     isPopular: true,
     popular: true,
     languageSafe: true,
@@ -251,10 +291,12 @@ export const games: Game[] = [
     description:
       "Design stable paths, test your build, and guide vehicles across tricky gaps.",
     iframeUrl: "https://1000webgames.com/games/constructabridge/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/construct-a-bridge.jpg",
     categories: ["Puzzle", "Strategy"],
     tags: ["bridge", "construction", "physics", "strategy"],
     source: "1000 WebGames",
+    isPublished: false,
     languageSafe: true,
     collection: "launch",
     controls: [
@@ -279,6 +321,7 @@ export const games: Game[] = [
     description:
       "Drive rough routes, protect your load, and balance speed with control on every delivery.",
     iframeUrl: "https://1000webgames.com/games/thecargo2/html5/",
+    iframeStatus: "available",
     thumbnail: "/game-covers/the-cargo-2.jpg",
     categories: ["Racing", "Strategy"],
     tags: ["driving", "cargo", "delivery", "balance"],
@@ -308,6 +351,7 @@ export const games: Game[] = [
     description:
       "Steer through tight city spaces, avoid collisions, and park with clean precision.",
     iframeUrl: "https://1000webgames.com/games/parkthetaxi3/html5/",
+    iframeStatus: "available",
     thumbnail: "/game-covers/park-the-taxi-3.jpg",
     categories: ["Racing", "Casual"],
     tags: ["parking", "taxi", "driving", "casual"],
@@ -338,10 +382,12 @@ export const games: Game[] = [
     description:
       "Arc the ball with touch and timing, then drop perfect shots through the hoop.",
     iframeUrl: "https://1000webgames.com/games/lobmaster2021/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/lob-master-2021.jpg",
     categories: ["Sports", "Casual"],
     tags: ["basketball", "arc", "timing", "casual"],
     source: "1000 WebGames",
+    isPublished: false,
     languageSafe: true,
     collection: "launch",
     controls: [
@@ -366,10 +412,12 @@ export const games: Game[] = [
     description:
       "Line up your aim, follow the arc, and outshoot opponents in quick basketball battles.",
     iframeUrl: "https://1000webgames.com/games/basketswooshes/html5/",
+    iframeStatus: "unavailable",
     thumbnail: "/game-covers/basket-swooshes.jpg",
     categories: ["Sports", "Arcade"],
     tags: ["basketball", "arcade", "aim", "competition"],
     source: "1000 WebGames",
+    isPublished: false,
     isPopular: true,
     popular: true,
     languageSafe: true,
@@ -391,7 +439,8 @@ export const games: Game[] = [
   },
 ];
 
-export const languageSafeGames = games.filter((game) => game.languageSafe !== false);
+export const visibleGames = games.filter((game) => isGameVisible(game));
+export const languageSafeGames = visibleGames.filter((game) => game.languageSafe !== false);
 
 export function getGameBySlug(slug: string) {
   return games.find((game) => game.slug === slug);
@@ -423,7 +472,7 @@ const homeSectionSlugOrder = {
 function getGamesBySlugOrder(slugs: readonly string[]) {
   return slugs
     .map((slug) => getGameBySlug(slug))
-    .filter((game): game is Game => Boolean(game));
+    .filter((game): game is Game => game !== undefined && isGameVisible(game));
 }
 
 export function getHomeCategoryGames(slug: string, limit = 6) {

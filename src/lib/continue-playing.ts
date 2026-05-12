@@ -1,4 +1,4 @@
-import { getGameBySlug } from "@/data/games";
+import { getGameBySlug, isGameVisible } from "@/data/games";
 
 export const CONTINUE_PLAYING_STORAGE_KEY = "gamenest:continue-playing";
 export const CONTINUE_PLAYING_LIMIT = 6;
@@ -52,7 +52,7 @@ export function readContinuePlaying(): ContinuePlayingEntry[] {
       .map((entry) => {
         const game = getGameBySlug(entry.slug);
 
-        if (!game) {
+        if (!game || !isGameVisible(game)) {
           return null;
         }
 

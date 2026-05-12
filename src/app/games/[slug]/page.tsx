@@ -111,7 +111,12 @@ export default async function GameDetailPage({ params }: Props) {
           </div>
         </section>
 
-        <GamePlayer title={game.title} iframeUrl={game.iframeUrl} categories={game.categories} />
+        <GamePlayer
+          title={game.title}
+          iframeUrl={game.iframeUrl}
+          iframeStatus={game.iframeStatus}
+          categories={game.categories}
+        />
 
         <section className="portal-panel p-6">
           <h2 className="text-xl font-black text-white">About {game.title}</h2>
