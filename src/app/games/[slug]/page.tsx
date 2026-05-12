@@ -7,7 +7,12 @@ import { GameHistoryTracker } from "@/components/GameHistoryTracker";
 import { GamePlayer } from "@/components/GamePlayer";
 import { Header } from "@/components/Header";
 import { getCategoryHref } from "@/data/categories";
-import { games, getGameBySlug, getSimilarGames, languageSafeGames } from "@/data/games";
+import {
+  getSimilarGames,
+  getVisibleGameBySlug,
+  languageSafeGames,
+  visibleGames,
+} from "@/data/games";
 import { buildGameMetadata, buildPageMetadata } from "@/lib/seo";
 
 type Props = {
@@ -15,12 +20,12 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return games.map((game) => ({ slug: game.slug }));
+  return visibleGames.map((game) => ({ slug: game.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const game = getGameBySlug(slug);
+  const game = getVisibleGameBySlug(slug);
 
   if (!game) {
     return buildPageMetadata(
@@ -35,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GameDetailPage({ params }: Props) {
   const { slug } = await params;
-  const game = getGameBySlug(slug);
+  const game = getVisibleGameBySlug(slug);
 
   if (!game) {
     notFound();

@@ -437,6 +437,316 @@ export const games: Game[] = [
       "A clear homepage anchor for the Sports section.",
     ],
   },
+  {
+    id: "game-013",
+    slug: "draw-bridge-puzzle",
+    title: "Draw Bridge Puzzle",
+    description:
+      "Draw safe paths, solve each obstacle, and guide the rider through compact logic stages.",
+    iframeUrl:
+      "https://html5.gamedistribution.com/516ceca89758466fa613fa96980eef76/?gd_sdk_referrer_url=https://www.onlinegames.io/draw-bridge-puzzle-1/",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/draw-bridge-puzzle.webp",
+    categories: ["Puzzle", "Adventure"],
+    tags: ["drawing", "bridge", "logic", "adventure"],
+    source: "OnlineGames.io / GameDistribution",
+    isPublished: true,
+    isNew: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Use the mouse or touch controls to draw the needed shape or path.",
+      "Adjust each line carefully so the rider reaches the goal safely.",
+    ],
+    howToPlay: [
+      "Study the obstacle layout before drawing anything.",
+      "Create a safe route or object that lets the rider pass the danger.",
+      "Finish each stage by reaching the goal without crashing.",
+    ],
+    features: [
+      "English-language embed from an approved source.",
+      "Very low text dependence after the game starts.",
+      "Real cover art that matches the game title and slug.",
+    ],
+  },
+  {
+    id: "game-014",
+    slug: "block-blast",
+    title: "Block Blast",
+    description:
+      "Place blocks carefully, clear rows and columns, and keep the board open for long runs.",
+    iframeUrl: "https://cloud.onlinegames.io/games/2024/unity3/block-blast/index-og.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/block-blast.jpg",
+    categories: ["Puzzle", "Board"],
+    tags: ["blocks", "grid", "placement", "board"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Drag and drop the available blocks onto the grid.",
+      "Think ahead so you do not block future placements.",
+    ],
+    howToPlay: [
+      "Fit the current pieces into the board with as little wasted space as possible.",
+      "Clear full rows or columns to make room for new shapes.",
+      "Keep the run alive by protecting open lanes for awkward blocks.",
+    ],
+    features: [
+      "English embed hosted on OnlineGames infrastructure.",
+      "Clean block puzzle loop with almost no language reliance.",
+      "Board-style gameplay that broadens the Puzzle shelf.",
+    ],
+  },
+  {
+    id: "game-015",
+    slug: "nuts-and-bolts-puzzle",
+    title: "Nuts and Bolts Puzzle",
+    description:
+      "Unscrew bolts in the right order, free the planks, and solve quick mechanical puzzles under pressure.",
+    iframeUrl: "https://cloud.onlinegames.io/games/2025/unity/nuts-and-bolts-puzzle/index-og.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/nuts-and-bolts-puzzle.jpg",
+    categories: ["Puzzle", "Strategy"],
+    tags: ["bolts", "logic", "mechanical", "strategy"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Click or tap bolts to move or remove them.",
+      "Work in the right order so each plank can fall away cleanly.",
+    ],
+    howToPlay: [
+      "Study which bolt frees the most space before making the first move.",
+      "Open blocked holes and move bolts where they unlock the next section.",
+      "Clear the entire structure to finish the level.",
+    ],
+    features: [
+      "English embed with no visible Chinese content in fetched page assets.",
+      "Mechanical puzzle theme that differs from matching and drawing games.",
+      "Matching real thumbnail downloaded from the source page.",
+    ],
+  },
+  {
+    id: "game-016",
+    slug: "mega-soccer",
+    title: "Mega Soccer",
+    description:
+      "Control a compact football squad, pass quickly, and outscore the other side in fast matches.",
+    iframeUrl: "https://cloud.onlinegames.io/games/2024/unity2/mega-soccer/index-og.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/mega-soccer.webp",
+    categories: ["Sports", "Arcade"],
+    tags: ["soccer", "football", "team", "arcade"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    isPopular: true,
+    popular: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Use the keyboard to move, pass, shoot, and sprint.",
+      "Switch players quickly so you stay in control of each phase.",
+    ],
+    howToPlay: [
+      "Move the ball forward with short passes instead of forcing every attack alone.",
+      "Use the right timing for tackles and shots near the box.",
+      "Score more goals before time runs out to win the match.",
+    ],
+    features: [
+      "Full English sports entry replacing a language-risk puzzle candidate.",
+      "Direct OnlineGames embed with stable HTTP 200 response.",
+      "Clear sports branding across title, slug, cover, and iframe URL.",
+    ],
+  },
+  {
+    id: "game-017",
+    slug: "basketball-io",
+    title: "Basketball io",
+    description:
+      "Drive hard to the hoop, steal the ball, and win quick 3D basketball matches with simple controls.",
+    iframeUrl: "https://www.onlinegames.io/games/2022/unity3/basketball-io/index.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/basketball-io.jpg",
+    categories: ["Sports", "Casual"],
+    tags: ["basketball", "3d", "court", "competition"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    isNew: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Use the keyboard to move your player and attack the basket.",
+      "Pressure the opponent on defense so they do not get a clear lane.",
+    ],
+    howToPlay: [
+      "Protect possession and break toward the rim when the lane opens up.",
+      "Time steals and contests so you do not give away easy points.",
+      "Outscore the other side to finish the match on top.",
+    ],
+    features: [
+      "English-only host and embed assets.",
+      "Readable basketball presentation for欧美 users.",
+      "Real gameplay-style cover aligned with the embedded title.",
+    ],
+  },
+  {
+    id: "game-018",
+    slug: "soccer-dash",
+    title: "Soccer Dash",
+    description:
+      "Curve the ball around defenders, avoid hazards, and score through compact soccer puzzle stages.",
+    iframeUrl:
+      "https://html5.gamedistribution.com/5772350f4ea345959c4e56a24d94ee42/?gd_sdk_referrer_url=https://www.onlinegames.io/soccer-dash/",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/soccer-dash.webp",
+    categories: ["Sports", "Arcade"],
+    tags: ["soccer", "aim", "obstacles", "arcade"],
+    source: "OnlineGames.io / GameDistribution",
+    isPublished: true,
+    isPopular: true,
+    popular: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Drag to choose the shot direction and release to kick.",
+      "Adjust each angle carefully to clear players and obstacles.",
+    ],
+    howToPlay: [
+      "Study the lane to the goal before you take the first shot.",
+      "Bend the ball through open gaps and around the defenders.",
+      "Reach the net in as few shots as possible to clear each level.",
+    ],
+    features: [
+      "English sports entry with quick arcade-style level design.",
+      "Approved GameDistribution embed source with working HTTP 200 response.",
+      "Distinct soccer thumbnail that matches title and slug.",
+    ],
+  },
+  {
+    id: "game-022",
+    slug: "tile-match",
+    title: "Tile Match",
+    description:
+      "Spot matching tiles, clear layered boards, and keep your moves efficient in a clean puzzle loop.",
+    iframeUrl: "https://cloud.onlinegames.io/games/2025/unity/tile-match/index-og.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/tile-match.jpg",
+    categories: ["Puzzle", "Board"],
+    tags: ["tiles", "matching", "board", "logic"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Click or tap tiles to collect matching sets.",
+      "Watch the tray space so you do not fill it with the wrong pieces.",
+    ],
+    howToPlay: [
+      "Look for accessible matching tiles before opening deeper layers.",
+      "Build complete sets efficiently to free space in the tray.",
+      "Clear the full board before your tray runs out of room.",
+    ],
+    features: [
+      "Pure puzzle gameplay with no sports theming mixed in.",
+      "English-language embed from the same verified source family.",
+      "Real cover image aligned with the title, slug, and iframe.",
+    ],
+  },
+  {
+    id: "game-019",
+    slug: "monster-truck-racing",
+    title: "Monster Truck Racing",
+    description:
+      "Race over rough tracks, jump cleanly, and use monster-truck power to reach the flag first.",
+    iframeUrl: "https://www.onlinegames.io/games/2021/1/monster-truck-racing/index.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/monster-truck-racing.jpg",
+    categories: ["Racing", "Action"],
+    tags: ["monster-truck", "racing", "jumps", "offroad"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Use the keyboard to accelerate, brake, and jump over hazards.",
+      "Balance the truck in the air so you land smoothly on the next hill.",
+    ],
+    howToPlay: [
+      "Push forward aggressively but avoid flipping the truck on steep ramps.",
+      "Use jumps at the right moment to clear obstacles and keep speed.",
+      "Beat the course and finish ahead of the competition.",
+    ],
+    features: [
+      "Full English racing candidate with clear monster-truck branding.",
+      "Action-leaning racing fit that works on desktop and mobile.",
+      "Verified embeddable URL and matching local cover.",
+    ],
+  },
+  {
+    id: "game-020",
+    slug: "mini-cars-racing",
+    title: "Mini Cars Racing",
+    description:
+      "Race toy-style cars around twisty tracks, beat rivals, and switch between solo and local versus modes.",
+    iframeUrl: "https://cloud.onlinegames.io/games/2021/unity/mini-cars-racing/index-og.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/mini-cars-racing.jpg",
+    categories: ["Racing", "Two Player"],
+    tags: ["mini-cars", "racing", "local-versus", "arcade"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    isPopular: true,
+    popular: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Use the keyboard to steer and hold racing lines through each corner.",
+      "If you play local versus, keep both control sets in sync on the same keyboard.",
+    ],
+    howToPlay: [
+      "Choose your mode and get off the line quickly.",
+      "Protect inside corners so rival cars cannot pass you easily.",
+      "Finish first to clear the race and move on.",
+    ],
+    features: [
+      "English racing game with broader replay value than the removed candidate.",
+      "Two-player category support without any Chinese source risk.",
+      "Source cover, title, slug, and iframe all line up.",
+    ],
+  },
+  {
+    id: "game-021",
+    slug: "speed-drift-racing",
+    title: "Speed Drift Racing",
+    description:
+      "Drift through sharp turns, manage momentum, and beat the field in compact arcade races.",
+    iframeUrl: "https://www.onlinegames.io/games/2022/construct/124/speed-drift-racing/index.html",
+    iframeStatus: "available",
+    thumbnail: "/game-covers/speed-drift-racing.jpg",
+    categories: ["Racing", "Arcade"],
+    tags: ["drifting", "racing", "corners", "arcade"],
+    source: "OnlineGames.io",
+    isPublished: true,
+    languageSafe: true,
+    collection: "launch",
+    controls: [
+      "Use the keyboard to steer and keep the car under control through each bend.",
+      "Brake early enough to stop the drift from pushing you too wide.",
+    ],
+    howToPlay: [
+      "Stay smooth entering corners so you exit with more speed than the other cars.",
+      "Recover quickly after small mistakes instead of overcorrecting.",
+      "Cross the finish line first to win the event.",
+    ],
+    features: [
+      "English-only embed assets from OnlineGames.",
+      "Readable arcade racer that complements the parking and cargo games already on the site.",
+      "Verified 200 iframe URL and matching thumbnail.",
+    ],
+  },
 ];
 
 export const visibleGames = games.filter((game) => isGameVisible(game));
@@ -444,6 +754,10 @@ export const languageSafeGames = visibleGames.filter((game) => game.languageSafe
 
 export function getGameBySlug(slug: string) {
   return games.find((game) => game.slug === slug);
+}
+
+export function getVisibleGameBySlug(slug: string) {
+  return visibleGames.find((game) => game.slug === slug);
 }
 
 export function getGamesByCategory(slug: string) {
@@ -459,14 +773,13 @@ export function getVisibleCategoryCount(slug: string) {
 const homeSectionSlugOrder = {
   action: ["assault-time", "warfare-area-3", "bullet-fury-2"],
   puzzle: [
-    "connect-2-cars",
-    "jewel-legend",
-    "gummy-blocks-evolution",
-    "truck-loader-5",
-    "construct-a-bridge",
+    "draw-bridge-puzzle",
+    "block-blast",
+    "nuts-and-bolts-puzzle",
+    "tile-match",
   ],
-  racing: ["the-cargo-2", "park-the-taxi-3"],
-  sports: ["lob-master-2021", "basket-swooshes"],
+  racing: ["monster-truck-racing", "mini-cars-racing", "speed-drift-racing"],
+  sports: ["mega-soccer", "basketball-io", "soccer-dash"],
 } as const;
 
 function getGamesBySlugOrder(slugs: readonly string[]) {
@@ -487,27 +800,27 @@ export function getHomeCategoryGames(slug: string, limit = 6) {
 
 export const featuredGames = languageSafeGames.filter((game) => game.featured);
 export const newGames = getGamesBySlugOrder([
-  "warfare-area-3",
-  "connect-2-cars",
-  "gummy-blocks-evolution",
-  "the-cargo-2",
+  "draw-bridge-puzzle",
+  "basketball-io",
+  "monster-truck-racing",
+  "mini-cars-racing",
 ]);
 export const popularGames = getGamesBySlugOrder([
   "assault-time",
   "warfare-area-3",
   "bullet-fury-2",
-  "jewel-legend",
-  "truck-loader-5",
+  "block-blast",
   "park-the-taxi-3",
-  "basket-swooshes",
+  "mega-soccer",
+  "mini-cars-racing",
 ]);
 export const homePopularGames = getGamesBySlugOrder([
   "warfare-area-3",
   "bullet-fury-2",
-  "jewel-legend",
-  "truck-loader-5",
+  "draw-bridge-puzzle",
   "park-the-taxi-3",
-  "basket-swooshes",
+  "basketball-io",
+  "mini-cars-racing",
 ]);
 
 export function withFallbackGames(primaryGames: Game[], minimumCount = 8) {

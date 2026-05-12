@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { categories } from "@/data/categories";
-import { games } from "@/data/games";
+import { visibleGames } from "@/data/games";
 import { siteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
-    ...games.map((game) => ({
+    ...visibleGames.map((game) => ({
       url: `${siteUrl}/games/${game.slug}`,
       lastModified,
       changeFrequency: "weekly" as const,

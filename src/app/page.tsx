@@ -23,7 +23,7 @@ export default function Home() {
   const actionGames = getHomeCategoryGames("action", 3);
   const puzzleGames = getHomeCategoryGames("puzzle", 5);
   const racingGames = getHomeCategoryGames("racing", 2);
-  const sportsGames = getHomeCategoryGames("sports", 2);
+  const sportsGames = getHomeCategoryGames("sports", 3);
 
   return (
     <div className="min-h-screen text-white">

@@ -2,6 +2,7 @@ import { getGameBySlug, isGameVisible } from "@/data/games";
 
 export const CONTINUE_PLAYING_STORAGE_KEY = "gamenest:continue-playing";
 export const CONTINUE_PLAYING_LIMIT = 6;
+export const CONTINUE_PLAYING_TTL_MS = 24 * 60 * 60 * 1000;
 
 export type ContinuePlayingEntry = {
   slug: string;
@@ -47,8 +48,10 @@ export function readContinuePlaying(): ContinuePlayingEntry[] {
       return [];
     }
 
-    return parsed
+    const now = Date.now();
+    const nextEntries = parsed
       .filter(isValidEntry)
+      .filter((entry) => now - entry.playedAt < CONTINUE_PLAYING_TTL_MS)
       .map((entry) => {
         const game = getGameBySlug(entry.slug);
 
@@ -67,6 +70,10 @@ export function readContinuePlaying(): ContinuePlayingEntry[] {
       .filter((entry): entry is ContinuePlayingEntry => entry !== null)
       .sort((left, right) => right.playedAt - left.playedAt)
       .slice(0, CONTINUE_PLAYING_LIMIT);
+
+    window.localStorage.setItem(CONTINUE_PLAYING_STORAGE_KEY, JSON.stringify(nextEntries));
+
+    return nextEntries;
   } catch {
     return [];
   }
