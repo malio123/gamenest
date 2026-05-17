@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { Game } from "@/data/games";
+import { getGameCategories, getGameThumbnail, type Game } from "@/data/games";
 
 type GameCardProps = {
   game: Game;
 };
 
 export function GameCard({ game }: GameCardProps) {
-  const visibleCategories = game.categories.slice(0, 2);
+  const visibleCategories = getGameCategories(game).slice(0, 2);
 
   return (
     <Link
@@ -18,7 +18,7 @@ export function GameCard({ game }: GameCardProps) {
       <article className="flex h-full flex-col">
         <div className="relative aspect-[1.575] overflow-hidden bg-slate-900">
           <Image
-            src={game.thumbnail}
+            src={getGameThumbnail(game)}
             alt={`${game.title} online game thumbnail`}
             title={`Play ${game.title} online`}
             fill
@@ -30,9 +30,9 @@ export function GameCard({ game }: GameCardProps) {
 
         <div className="flex flex-1 flex-col gap-3 p-3.5">
           <div className="min-w-0 space-y-2">
-            <h3 className="line-clamp-2 text-base font-black tracking-tight text-white">
+            <p className="line-clamp-2 text-base font-black tracking-tight text-white">
               {game.title}
-            </h3>
+            </p>
             <div className="flex flex-wrap gap-1.5">
               {visibleCategories.map((category) => (
                 <span

@@ -32,9 +32,9 @@ function ContinuePlayingCard({ game }: { game: ContinuePlayingEntry }) {
 
         <div className="flex flex-1 flex-col gap-3 p-3">
           <div className="space-y-2">
-            <h3 className="line-clamp-2 text-sm font-black tracking-tight text-white sm:text-[15px]">
+            <p className="line-clamp-2 text-sm font-black tracking-tight text-white sm:text-[15px]">
               {game.title}
-            </h3>
+            </p>
             <div className="flex flex-wrap gap-1.5">
               {visibleCategories.map((category) => (
                 <span

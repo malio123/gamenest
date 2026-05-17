@@ -1,4 +1,4 @@
-import { getGameBySlug, isGameVisible } from "@/data/games";
+import { getGameBySlug, getGameCategories, getGameThumbnail, isGameVisible } from "@/data/games";
 
 export const CONTINUE_PLAYING_STORAGE_KEY = "gamenest:continue-playing";
 export const CONTINUE_PLAYING_LIMIT = 6;
@@ -62,8 +62,8 @@ export function readContinuePlaying(): ContinuePlayingEntry[] {
         return {
           slug: game.slug,
           title: game.title,
-          thumbnail: game.thumbnail,
-          categories: game.categories,
+          thumbnail: getGameThumbnail(game),
+          categories: getGameCategories(game),
           playedAt: entry.playedAt,
         };
       })

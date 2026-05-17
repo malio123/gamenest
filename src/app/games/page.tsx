@@ -5,7 +5,7 @@ import { GameGrid } from "@/components/GameGrid";
 import { Header } from "@/components/Header";
 import { PortalBrowseLayout } from "@/components/PortalBrowseLayout";
 import { categories } from "@/data/categories";
-import { languageSafeGames } from "@/data/games";
+import { getGameCategories, getGameTags, languageSafeGames } from "@/data/games";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata(
@@ -34,8 +34,8 @@ function matchesGameQuery(game: (typeof languageSafeGames)[number], query: strin
   const haystack = [
     game.title,
     game.description,
-    game.categories.join(" "),
-    game.tags.join(" "),
+    getGameCategories(game).join(" "),
+    getGameTags(game).join(" "),
   ]
     .join(" ")
     .toLowerCase();

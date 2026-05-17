@@ -2,6 +2,11 @@ import { categoryMatchesSlug } from "@/data/categories";
 
 export type GameCollection = "launch";
 export type IframeStatus = "available" | "unavailable" | "unknown";
+export type GameAspectRatio = "16/9" | "4/3" | "3/2" | "auto";
+export type GameControl = {
+  label: string;
+  value: string;
+};
 
 export type { Category } from "@/data/categories";
 export {
@@ -21,13 +26,45 @@ export type Game = {
   description: string;
   iframeUrl: string;
   iframeStatus?: IframeStatus;
-  thumbnail: string;
-  categories: string[];
-  tags: string[];
+  aspectRatio?: GameAspectRatio;
+  thumbnail?: string;
+  screenshots?: string[];
+  categories?: string[];
+  tags?: string[];
   source: string;
-  controls: string[];
-  howToPlay: string[];
-  features: string[];
+  controls?: string[];
+  howToPlay?: string[];
+  features?: string[];
+  overview?: string;
+  shortDescription?: string;
+  longDescription?: string;
+  tips?: string[];
+  controlItems?: GameControl[];
+  rating?: number;
+  votes?: number;
+  plays?: string | number;
+  platform?: string;
+  technology?: string;
+  statusLabel?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  faq?: Array<{
+    question: string;
+    answer: string;
+  }>;
+  developer?: string;
+  releaseDate?: string;
+  updatedDate?: string;
+  isOriginal?: boolean;
+  version?: string;
+  updateNotes?: string[];
+  gameplayObjective?: string;
+  gameModes?: string[];
+  scoringRules?: string[];
+  playMode?: string | string[];
+  author?: string;
   isNew?: boolean;
   isPopular?: boolean;
   popular?: boolean;
@@ -61,6 +98,30 @@ export function hasPlayableIframe(game: Pick<Game, "iframeUrl" | "iframeStatus">
 
 export function isGameVisible(game: Game) {
   return game.isPublished !== false && hasPlayableIframe(game);
+}
+
+export function getGameCategories(game: Pick<Game, "categories">) {
+  return game.categories ?? [];
+}
+
+export function getGameTags(game: Pick<Game, "tags">) {
+  return game.tags ?? [];
+}
+
+export function getGameControls(game: Pick<Game, "controls" | "controlItems">) {
+  return game.controlItems?.map((item) => `${item.label}: ${item.value}`) ?? game.controls ?? [];
+}
+
+export function getGameHowToPlay(game: Pick<Game, "howToPlay">) {
+  return game.howToPlay ?? [];
+}
+
+export function getGameFeatures(game: Pick<Game, "features">) {
+  return game.features ?? [];
+}
+
+export function getGameThumbnail(game: Pick<Game, "thumbnail">) {
+  return game.thumbnail ?? "/favicon.ico";
 }
 
 export const games: Game[] = [
@@ -105,26 +166,73 @@ export const games: Game[] = [
     iframeStatus: "available",
     thumbnail: "/game-covers/warfare-area-3.jpg",
     categories: ["Action", "Shooting"],
-    tags: ["fps", "shooter", "combat", "tactical"],
+    tags: ["FPS", "Shooting", "Action", "War", "3D", "Browser Game"],
     source: "1000 WebGames",
     isPopular: true,
     popular: true,
     isNew: true,
     languageSafe: true,
     collection: "launch",
+    overview:
+      "Warfare Area 3 is a first-person shooting game where you enter hostile combat zones and clear enemies one by one. Stay alert, aim carefully, and reload at the right moment as you move through each area. The game is built for quick browser play, so you can jump into the action without downloads or sign-ups.",
+    rating: 4.6,
+    platform: "Browser",
+    technology: "HTML5",
+    statusLabel: "Play instantly, no download",
+    shortDescription:
+      "Jump into browser-based firefights, reload under pressure, and clear hostile zones with accurate first-person shooting.",
+    longDescription:
+      "Warfare Area 3 drops you into compact first-person combat missions where survival depends on movement, timing, and steady aim. Each firefight is built for quick browser sessions, so you can load in fast, clear the area, and move on to the next encounter without installs or account setup.",
+    metaTitle: "Play Warfare Area 3 - Free Shooting Game | GameNest",
+    metaDescription:
+      "Play Warfare Area 3 online for free on GameNest. Clear hostile zones, reload fast, and win intense browser shooting battles with no downloads.",
+    seoTitle: "Play Warfare Area 3 Online for Free | GameNest",
+    seoDescription:
+      "Play Warfare Area 3 online for free on GameNest. Jump into a browser-based shooting game, aim carefully, reload fast, and clear hostile zones with no download.",
+    controlItems: [
+      { label: "Move", value: "WASD" },
+      { label: "Aim", value: "Mouse" },
+      { label: "Shoot", value: "Left Mouse Button" },
+      { label: "Reload", value: "R" },
+      { label: "Pause", value: "Esc" },
+      { label: "Fullscreen", value: "Fullscreen button" },
+    ],
     controls: [
-      "Use the mouse to aim and shoot.",
-      "Move and take cover with the keyboard while tracking enemy positions.",
+      "Move with WASD.",
+      "Aim with the mouse.",
+      "Shoot with the left mouse button.",
+      "Reload with R.",
+      "Pause with Esc.",
     ],
     howToPlay: [
-      "Enter each combat zone and eliminate hostile targets as they appear.",
-      "Stay alert, manage your positioning, and avoid taking unnecessary damage.",
+      "Move through the area, look for enemies, and take them down before they hit you.",
+      "Keep an eye on your ammo, reload when it is safe, and use quick reactions to survive each encounter.",
       "Clear the area to complete the mission and advance to the next firefight.",
     ],
+    tips: [
+      "Keep moving instead of standing still.",
+      "Reload before entering open areas.",
+      "Aim for enemies quickly and avoid wasting ammo.",
+      "Use the environment to create distance from enemies.",
+    ],
     features: [
-      "First-person browser shooting with a strong combat theme.",
-      "Mission-based encounters that keep the pace high.",
-      "Action-focused gameplay that fits the GameNest audience.",
+      "Fast first-person shooting gameplay.",
+      "Browser-based play with no download.",
+      "Simple keyboard and mouse controls.",
+      "Action-focused combat zones.",
+      "Works directly on desktop browsers.",
+    ],
+    faq: [
+      {
+        question: "Can I play Warfare Area 3 without downloading anything?",
+        answer:
+          "Yes. Warfare Area 3 runs in the browser on GameNest, so you can start a session without downloading a separate app.",
+      },
+      {
+        question: "What kind of game is Warfare Area 3?",
+        answer:
+          "It is a browser-based first-person shooting game focused on fast reactions, accurate aim, and clearing hostile combat areas.",
+      },
     ],
   },
   {
@@ -546,6 +654,10 @@ export const games: Game[] = [
     popular: true,
     languageSafe: true,
     collection: "launch",
+    shortDescription:
+      "Control a compact football squad, pass quickly, and score in fast browser matches with simple arcade handling.",
+    platform: "Browser",
+    technology: "Unity WebGL",
     controls: [
       "Use the keyboard to move, pass, shoot, and sprint.",
       "Switch players quickly so you stay in control of each phase.",
@@ -560,6 +672,13 @@ export const games: Game[] = [
       "Direct OnlineGames embed with stable HTTP 200 response.",
       "Clear sports branding across title, slug, cover, and iframe URL.",
     ],
+    faq: [
+      {
+        question: "Is Mega Soccer realistic or arcade-style?",
+        answer:
+          "Mega Soccer leans arcade. Matches are quick, controls are simple, and the focus is on fast attacks and immediate replay value.",
+      },
+    ],
   },
   {
     id: "game-017",
@@ -569,6 +688,7 @@ export const games: Game[] = [
       "Drive hard to the hoop, steal the ball, and win quick 3D basketball matches with simple controls.",
     iframeUrl: "https://www.onlinegames.io/games/2022/unity3/basketball-io/index.html",
     iframeStatus: "available",
+    aspectRatio: "4/3",
     thumbnail: "/game-covers/basketball-io.jpg",
     categories: ["Sports", "Casual"],
     tags: ["basketball", "3d", "court", "competition"],
@@ -577,6 +697,15 @@ export const games: Game[] = [
     isNew: true,
     languageSafe: true,
     collection: "launch",
+    shortDescription:
+      "Attack the rim, steal possession, and win quick 3D basketball matches in the browser with no download required.",
+    longDescription:
+      "Basketball io is a quick sports game built around short one-on-one style possessions, simple movement, and aggressive defense. You can jump into a match instantly, pressure the ball, drive into open lanes, and finish at the basket without waiting through a long setup flow.",
+    metaTitle: "Play Basketball io - Free Sports Game | GameNest",
+    metaDescription:
+      "Play Basketball io online for free on GameNest. Drive to the hoop, steal possession, and win fast 3D browser basketball matches with no downloads.",
+    platform: "Browser",
+    technology: "Unity WebGL",
     controls: [
       "Use the keyboard to move your player and attack the basket.",
       "Pressure the opponent on defense so they do not get a clear lane.",
@@ -588,8 +717,20 @@ export const games: Game[] = [
     ],
     features: [
       "English-only host and embed assets.",
-      "Readable basketball presentation for欧美 users.",
+      "Readable basketball presentation for English-speaking players.",
       "Real gameplay-style cover aligned with the embedded title.",
+    ],
+    faq: [
+      {
+        question: "Can I play Basketball io on desktop?",
+        answer:
+          "Yes. Basketball io runs in a desktop browser and uses simple controls built for quick instant-play matches.",
+      },
+      {
+        question: "What makes Basketball io easy to start?",
+        answer:
+          "The game keeps the rules simple, starts quickly in the browser, and focuses on short matches built around possession, defense, and finishing at the rim.",
+      },
     ],
   },
   {
@@ -762,7 +903,7 @@ export function getVisibleGameBySlug(slug: string) {
 
 export function getGamesByCategory(slug: string) {
   return languageSafeGames.filter((game) =>
-    game.categories.some((category) => categoryMatchesSlug(category, slug)),
+    getGameCategories(game).some((category) => categoryMatchesSlug(category, slug)),
   );
 }
 
@@ -840,7 +981,7 @@ export function getSimilarGames(game: Game, limit = 4) {
     .filter(
       (candidate) =>
         candidate.id !== game.id &&
-        candidate.categories.some((category) => game.categories.includes(category)),
+        getGameCategories(candidate).some((category) => getGameCategories(game).includes(category)),
     )
     .slice(0, limit);
 }

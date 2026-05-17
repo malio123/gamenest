@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
 import type { Category } from "@/data/categories";
-import type { Game } from "@/data/games";
+import { getCategoryByValue } from "@/data/categories";
+import { getGameThumbnail, type Game } from "@/data/games";
 
 export const siteName = "GameNest";
-const fallbackSiteUrl = "https://gamenest.example.com";
-const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-const isLocalhostUrl =
-  configuredSiteUrl != null &&
-  /^https?:\/\/(localhost|127(?:\.\d{1,3}){3})(:\d+)?/i.test(configuredSiteUrl);
+const fallbackSiteUrl = "http://localhost:3000";
+const configuredSiteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || process.env.NEXT_PUBLIC_APP_URL?.trim();
 
-export const siteUrl =
-  configuredSiteUrl && !(process.env.NODE_ENV === "production" && isLocalhostUrl)
-    ? configuredSiteUrl.replace(/\/+$/, "")
-    : fallbackSiteUrl;
+export const siteUrl = (configuredSiteUrl || fallbackSiteUrl).replace(/\/+$/, "");
 
 export const homeTitle = "Play Free Online Games Instantly | GameNest";
 export const homeDescription =
@@ -23,10 +19,67 @@ export function absoluteUrl(path = "/") {
   return `${siteUrl}${normalizedPath}`;
 }
 
+function compactWhitespace(value: string) {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function stripTrailingSentencePunctuation(value: string) {
+  return value.replace(/[.!?\s]+$/g, "").trim();
+}
+
+function trimDescription(value: string, maxLength = 160) {
+  const normalized = compactWhitespace(value);
+
+  if (normalized.length <= maxLength) {
+    return normalized;
+  }
+
+  const shortened = normalized.slice(0, maxLength - 1);
+  const lastBreak = shortened.lastIndexOf(" ");
+  return `${(lastBreak > 110 ? shortened.slice(0, lastBreak) : shortened).trimEnd()}.`;
+}
+
+export function getPrimaryCategoryName(game: Pick<Game, "categories">) {
+  return game.categories?.[0] ?? null;
+}
+
+export function getGameCanonicalPath(game: Pick<Game, "slug">) {
+  return `/games/${game.slug}`;
+}
+
+export function getGameCanonicalUrl(game: Pick<Game, "slug">) {
+  return absoluteUrl(getGameCanonicalPath(game));
+}
+
+export function getGameMetaTitle(game: Game) {
+  const primaryCategory = getPrimaryCategoryName(game);
+  const canonicalCategory = primaryCategory ? getCategoryByValue(primaryCategory)?.name : null;
+
+  return (
+    game.metaTitle ??
+    game.seoTitle ??
+    (canonicalCategory
+      ? `Play ${game.title} - Free ${canonicalCategory} Game | ${siteName}`
+      : `Play ${game.title} Online for Free | ${siteName}`)
+  );
+}
+
+export function getGameMetaDescription(game: Game) {
+  const baseDescription =
+    game.metaDescription ??
+    game.seoDescription ??
+    `Play ${game.title} online for free on ${siteName}. ${
+      stripTrailingSentencePunctuation(game.shortDescription ?? game.description)
+    } Enjoy instant browser gameplay with no downloads.`;
+
+  return trimDescription(baseDescription, 160);
+}
+
 export function buildOpenGraph(
   title: string,
   description: string,
   path = "/",
+  imagePath?: string,
 ): Metadata["openGraph"] {
   return {
     title,
@@ -34,6 +87,14 @@ export function buildOpenGraph(
     siteName,
     type: "website",
     url: absoluteUrl(path),
+    images: imagePath
+      ? [
+          {
+            url: absoluteUrl(imagePath),
+            alt: `${title} preview image`,
+          },
+        ]
+      : undefined,
   };
 }
 
@@ -46,9 +107,14 @@ export function buildPageMetadata(
     title,
     description,
     alternates: {
-      canonical: path,
+      canonical: absoluteUrl(path),
     },
     openGraph: buildOpenGraph(title, description, path),
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -60,8 +126,23 @@ export function buildCategoryMetadata(category: Category, gameCount: number): Me
 }
 
 export function buildGameMetadata(game: Game): Metadata {
-  const title = `Play ${game.title} Online for Free | ${siteName}`;
-  const description = `Play ${game.title} online for free on ${siteName}. ${game.description}`;
+  const title = getGameMetaTitle(game);
+  const description = getGameMetaDescription(game);
+  const path = getGameCanonicalPath(game);
+  const imagePath = game.thumbnail ? getGameThumbnail(game) : undefined;
 
-  return buildPageMetadata(title, description, `/games/${game.slug}`);
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: getGameCanonicalUrl(game),
+    },
+    openGraph: buildOpenGraph(title, description, path, imagePath),
+    twitter: {
+      card: imagePath ? "summary_large_image" : "summary",
+      title,
+      description,
+      images: imagePath ? [absoluteUrl(imagePath)] : undefined,
+    },
+  };
 }

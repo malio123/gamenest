@@ -3,7 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { GameGrid } from "@/components/GameGrid";
-import { type Category, categoryMatchesSlug, type Game } from "@/data/games";
+import {
+  type Category,
+  categoryMatchesSlug,
+  getGameCategories,
+  type Game,
+} from "@/data/games";
 
 type FeaturedFilter = "all" | "popular" | string;
 
@@ -27,7 +32,7 @@ export function HomeFeaturedSection({
       return game.isPopular === true || game.popular === true;
     }
 
-    return game.categories.some((category) => categoryMatchesSlug(category, activeFilter));
+    return getGameCategories(game).some((category) => categoryMatchesSlug(category, activeFilter));
   });
 
   const visibleGames = filteredGames.slice(0, 8);
